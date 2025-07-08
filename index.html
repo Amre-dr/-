@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICH Surgical Outcomes Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 20px;
+      line-height: 1.6;
+      direction: ltr;
+    }
+    h2 {
+      background-color: #f2f2f2;
+      padding: 8px;
+      border-left: 6px solid #0078D7;
+    }
+    label {
+      font-weight: bold;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .checkbox-group, .radio-group {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+    input[type="text"], input[type="number"], input[type="date"], input[type="datetime-local"] {
+      width: 300px;
+      padding: 4px;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Retrospective Data Collection Form</h1>
+  <p><strong>Study Title:</strong> Early Outcomes After Surgical Intervention for Intracerebral Hemorrhage (ICH)</p>
+
+  <div class="section">
+    <h2>Section A: Patient Demographics</h2>
+    
+    <label>1. Study ID / MRN:</label><br>
+    <input type="text" name="study_id"><br>
+
+    <label>2. Age at Presentation:</label><br>
+    <input type="number" name="age"><br>
+
+    <label>3. Sex:</label><br>
+    <div class="radio-group">
+      <input type="radio" name="sex" value="Male"> Male<br>
+      <input type="radio" name="sex" value="Female"> Female
+    </div><br>
+
+    <label>4. Body Mass Index (BMI):</label><br>
+    <input type="text" name="bmi"><br>
+
+    <label>5. Date of Presentation:</label><br>
+    <input type="date" name="date_presentation"><br>
+
+    <label>6. Date and Time of Symptom Onset:</label><br>
+    <input type="datetime-local" name="datetime_onset"><br>
+
+    <label>7. Time from Onset to Hospital Arrival (hours):</label><br>
+    <input type="number" name="hours_arrival"><br>
+
+    <label>8. Mode of Arrival:</label><br>
+    <div class="radio-group">
+      <input type="radio" name="arrival_mode" value="Ambulance"> Ambulance<br>
+      <input type="radio" name="arrival_mode" value="Private Vehicle"> Private Vehicle<br>
+      <input type="radio" name="arrival_mode" value="Referral"> Referral<br>
+      <input type="radio" name="arrival_mode" value="Other"> Other
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Section B: Clinical History and Risk Factors</h2>
+
+    <label>9. Medical Comorbidities (check all that apply):</label><br>
+    <div class="checkbox-group">
+      <input type="checkbox" name="comorbidity" value="Hypertension"> Hypertension<br>
+      <input type="checkbox" name="comorbidity" value="Diabetes"> Diabetes Mellitus<br>
+      <input type="checkbox" name="comorbidity" value="CAD"> Coronary Artery Disease<br>
+      <input type="checkbox" name="comorbidity" value="CHF"> Congestive Heart Failure<br>
+      <input type="checkbox" name="comorbidity" value="CKD"> Chronic Kidney Disease<br>
+      <input type="checkbox" name="comorbidity" value="Liver"> Liver Disease<br>
+      <input type="checkbox" name="comorbidity" value="AFib"> Atrial Fibrillation<br>
+      <input type="checkbox" name="comorbidity" value="Stroke"> Stroke History<br>
+      <input type="checkbox" name="comorbidity" value="ICH"> ICH History<br>
+      <input type="checkbox" name="comorbidity" value="Smoking"> Smoking<br>
+      <input type="checkbox" name="comorbidity" value="Alcohol"> Alcohol Use<br>
+      <input type="checkbox" name="comorbidity" value="Malignancy"> Malignancy<br>
+      <input type="checkbox" name="comorbidity" value="Dementia"> Dementia<br>
+      <input type="checkbox" name="comorbidity" value="Antiplatelet"> Antiplatelet Use<br>
+      <input type="checkbox" name="comorbidity" value="Anticoagulant"> Anticoagulant Use<br>
+      <input type="checkbox" name="comorbidity" value="Epilepsy"> Epilepsy
+    </div><br>
+
+    <label>10. Pre-morbid Functional Status (mRS):</label><br>
+    <input type="text" name="mRS">
+  </div>
+
+</body>
+</html>
